@@ -47,9 +47,11 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     </Link>
                                 </div>
                                 <div className="site-mast-right">
-                                    { site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
+                                    {<Navigation data={site.navigation} navClass="site-nav-item" />}
+                                    <Link className="site-nav-button" to="/contact">Contact</Link>
+                                    {/*{ site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
                                     { site.facebook && <a href={ facebookUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>}
-                                    <a className="site-nav-item" href={ `https://feedly.com/i/subscription/feed/${config.siteUrl}/rss/` } target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="RSS Feed" /></a>
+                                    <a className="site-nav-item" href={ `https://feedly.com/i/subscription/feed/${config.siteUrl}/rss/` } target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="RSS Feed" /></a> */}
                                 </div>
                             </div>
                             { isHome ?
@@ -61,10 +63,8 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             <nav className="site-nav">
                                 <div className="site-nav-left">
                                     {/* The navigation items as setup in Ghost */}
-                                    <Navigation data={site.navigation} navClass="site-nav-item" />
                                 </div>
                                 <div className="site-nav-right">
-                                    <Link className="site-nav-button" to="/about">About</Link>
                                 </div>
                             </nav>
                         </div>
@@ -82,10 +82,11 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                     <footer className="site-foot">
                         <div className="site-foot-nav container">
                             <div className="site-foot-nav-left">
-                                <Link to="/">{site.title}</Link> © 2019 &mdash; Published with <a className="site-foot-nav-item" href="https://ghost.org" target="_blank" rel="noopener noreferrer">Ghost</a>
+                                <Link to="/">{site.title}</Link> © 2020
                             </div>
                             <div className="site-foot-nav-right">
                                 <Navigation data={site.navigation} navClass="site-foot-nav-item" />
+                                <Link className="site-nav-item" to="/contact">Contact</Link>
                             </div>
                         </div>
                     </footer>
