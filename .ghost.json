@@ -1,10 +1,10 @@
 {
   "development": {
-    "apiUrl": "https://ancestraltips.com",
+    "apiUrl": "https://ghost.ancestraltips.com",
     "contentApiKey": "ca3b55e88ab795322686693148"
   },
   "production": {
-    "apiUrl": "https://ancestraltips.com",
+    "apiUrl": "https://ghost.ancestraltips.com",
     "contentApiKey": "ca3b55e88ab795322686693148"
   }
 }
