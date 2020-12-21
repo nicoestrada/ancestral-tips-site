@@ -45,9 +45,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                             : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
                                         }
                                     </Link>
+                                    {<Navigation data={site.navigation} navClass="site-nav-item" />}
                                 </div>
                                 <div className="site-mast-right">
-                                    {<Navigation data={site.navigation} navClass="site-nav-item" />}
                                     <Link className="site-nav-button" to="/contact">Contact</Link>
                                     {/*{ site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
                                     { site.facebook && <a href={ facebookUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>}
@@ -62,6 +62,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 null}
                             <nav className="site-nav">
                                 <div className="site-nav-left">
+                                    
                                     {/* The navigation items as setup in Ghost */}
                                 </div>
                                 <div className="site-nav-right">
@@ -70,9 +71,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                         </div>
                     </header>
 
-                    <main className="site-main">
+                    <main>
                         {/* All the main content gets inserted here, index.js, post.js */}
-                        {children}
+                        {/* children */}
                     </main>
 
                 </div>
