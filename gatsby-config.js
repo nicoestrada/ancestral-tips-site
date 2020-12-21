@@ -42,6 +42,15 @@ module.exports = {
          *  Content Plugins
          */
         {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+              trackingId: "UA-185733146-1",
+              // this option places the tracking script into the head of the DOM
+              head: true,
+              // other options
+            },
+          },
+        {
             resolve: `gatsby-source-filesystem`,
             options: {
                 path: path.join(__dirname, `src`, `pages`),
