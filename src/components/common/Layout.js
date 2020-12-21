@@ -71,9 +71,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                         </div>
                     </header>
 
-                    <main>
+                    <main className="site-main">
                         {/* All the main content gets inserted here, index.js, post.js */}
-                        {/* children */}
+                        {children} 
                     </main>
 
                 </div>
