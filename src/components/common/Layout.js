@@ -58,6 +58,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 <div className="site-banner">
                                     <h1 className="site-banner-title">{site.title}</h1>
                                     <p className="site-banner-desc">{site.description}</p>
+    
                                 </div> :
                                 null}
                             <nav className="site-nav">
@@ -73,7 +74,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 
                     <main className="site-main">
                         {/* All the main content gets inserted here, index.js, post.js */}
-                        {children} 
+                        { children } 
                     </main>
 
                 </div>
